@@ -12,6 +12,9 @@ class MainActivity : AppCompatActivity() {
 
         val datos : Array<Titular> = Array(15,{i -> Titular("Título ${i+1}","Subtítulo largo ${i+1}" )})
         val adaptador = AdaptadorTitulares(this,datos)
+        val header = layoutInflater.inflate(R.layout.list_header, null)
+
         lstOpciones.adapter = adaptador // using kotlinx synthetic
+        lstOpciones.addHeaderView(header)
     }
 }
