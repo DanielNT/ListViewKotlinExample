@@ -36,7 +36,7 @@ class AdaptadorTitulares(context: Context, val datos: Array<Titular>)
         return item!!
     }
 
-    internal class ViewHolder {
+    internal class ViewHolder { 
         var titulo: TextView? = null
         var subtitulo: TextView? = null
     }
