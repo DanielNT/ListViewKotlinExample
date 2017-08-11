@@ -42,5 +42,3 @@ class AdaptadorTitulares(context: Context, val datos: Array<Titular>)
     }
 
 }
-
-
