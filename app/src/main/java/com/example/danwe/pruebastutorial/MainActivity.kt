@@ -1,8 +1,8 @@
 package com.example.danwe.pruebastutorial
 
-import android.support.v7.app.AppCompatActivity
 import android.os.Bundle
-import android.widget.ListView
+import android.support.v7.app.AppCompatActivity
+import kotlinx.android.synthetic.main.activity_main.*
 
 class MainActivity : AppCompatActivity() {
 
@@ -12,7 +12,6 @@ class MainActivity : AppCompatActivity() {
 
         val datos : Array<Titular> = Array(15,{i -> Titular("Título ${i+1}","Subtítulo largo ${i+1}" )})
         val adaptador = AdaptadorTitulares(this,datos)
-        val lstOpciones : ListView = findViewById(R.id.LstOpciones)
-        lstOpciones.adapter = adaptador
+        lstOpciones.adapter = adaptador // using kotlinx synthetic
     }
 }

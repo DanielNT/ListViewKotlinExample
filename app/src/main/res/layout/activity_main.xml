@@ -6,7 +6,7 @@
     tools:context="com.example.danwe.pruebastutorial.MainActivity">
 
     <ListView
-        android:id="@+id/LstOpciones"
+        android:id="@+id/lstOpciones"
         android:layout_width="match_parent"
         android:layout_height="wrap_content" />
 
