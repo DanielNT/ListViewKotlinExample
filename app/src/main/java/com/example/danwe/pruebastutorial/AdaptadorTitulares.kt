@@ -30,8 +30,8 @@ class AdaptadorTitulares(context: Context, val datos: Array<Titular>)
             holder = item.tag as ViewHolder
         }
 
-        holder.titulo!!.text = datos[position].titulo
-        holder.subtitulo!!.text = datos[position].subtitulo
+        holder.titulo?.text = datos[position].titulo
+        holder.subtitulo?.text = datos[position].subtitulo
 
         return item!!
     }
